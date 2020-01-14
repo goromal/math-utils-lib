@@ -2,6 +2,8 @@
 #include "math-utils-lib/modeling.h"
 #include "math-utils-lib/nano_ad.h"
 #include "math-utils-lib/constants.h"
+#include "math-utils-lib/generic.h"
+#include "math-utils-lib/tools.h"
 
 #include "gtest/gtest.h"
 

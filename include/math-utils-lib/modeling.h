@@ -5,8 +5,10 @@
 #include <boost/function.hpp>
 #include <boost/bind.hpp>
 #include "constants.h"
+#include "generic.h"
 
 using namespace Eigen;
+using namespace utils_math;
 
 namespace modeling {
 

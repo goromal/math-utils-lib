@@ -9,17 +9,6 @@ using namespace Eigen;
 namespace utils_math
 {
 
-// LEGACY skew
-inline Eigen::Matrix3d skew(const Eigen::Vector3d v)
-{
-  Eigen::Matrix3d mat;
-  mat << 0.0, -v(2), v(1),
-         v(2), 0.0, -v(0),
-         -v(1), v(0), 0.0;
-  return mat;
-}
-
-
 static const Eigen::Matrix<double, 2, 3> I_2x3 = [] {
   Eigen::Matrix<double, 2, 3> tmp;
   tmp << 1.0, 0, 0,
@@ -55,15 +44,5 @@ static const Eigen::Vector3d e_z = [] {
   tmp << 0, 0, 1.0;
   return tmp;
 }();
-
-template <typename T>
-Eigen::Matrix<T,3,3> skew(const Eigen::Matrix<T,3,1>& v)
-{
-  Eigen::Matrix<T,3,3> mat;
-  mat << (T)0.0, -v(2), v(1),
-         v(2), (T)0.0, -v(0),
-         -v(1), v(0), (T)0.0;
-  return mat;
-}
 
 } // namespace utils_math

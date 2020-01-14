@@ -3,6 +3,7 @@
 #include "modeling.h"
 
 using namespace Eigen;
+using namespace utils_math;
 
 namespace control {
 
