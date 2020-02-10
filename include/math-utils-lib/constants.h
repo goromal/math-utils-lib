@@ -9,6 +9,19 @@ using namespace Eigen;
 namespace utils_math
 {
 
+typedef Eigen::Matrix<double, 5, 1> Vector5d;
+typedef Eigen::Matrix<double, 6, 1> Vector6d;
+typedef Eigen::Matrix<double, 7, 1> Vector7d;
+typedef Eigen::Matrix<double, 8, 1> Vector8d;
+typedef Eigen::Matrix<double, 9, 1> Vector9d;
+typedef Eigen::Matrix<double, 10, 1> Vector10d;
+
+typedef Eigen::Matrix<double, 5, 5> Matrix5d;
+typedef Eigen::Matrix<double, 6, 6> Matrix6d;
+typedef Eigen::Matrix<double, 7, 7> Matrix7d;
+typedef Eigen::Matrix<double, 8, 8> Matrix8d;
+typedef Eigen::Matrix<double, 9, 9> Matrix9d;
+
 static const Eigen::Matrix<double, 2, 3> I_2x3 = [] {
   Eigen::Matrix<double, 2, 3> tmp;
   tmp << 1.0, 0, 0,
