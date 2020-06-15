@@ -12,6 +12,9 @@ include_directories(
   ${Boost_INCLUDE_DIRS}
 )
 
+include_directories(lib/geometry-utils-lib/include)
+add_subdirectory(lib/geometry-utils-lib)
+
 add_library(math-utils-lib INTERFACE)
 target_include_directories(math-utils-lib
     INTERFACE
